@@ -4,7 +4,7 @@ import { Mountain } from 'lucide-react';
 export function Brand({ compact = false }: { compact?: boolean }) {
   return (
     <Link href="/" aria-label="TonTon BushCraft — Accueil" className="group inline-flex items-center gap-3">
-      <span className="grid size-11 place-items-center rounded-full border border-sand/35 bg-white/5 text-sand transition-transform duration-300 group-hover:-rotate-6">
+      <span className="grid size-11 place-items-center rounded-full border border-sand/35 bg-white/5 text-sand transition-[transform,background-color,border-color] duration-700 ease-out-expo group-hover:-rotate-6 group-hover:border-sand group-hover:bg-sand/15">
         <Mountain className="size-5" strokeWidth={1.7} />
       </span>
       {compact ? null : (

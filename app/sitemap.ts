@@ -4,7 +4,7 @@ import { siteUrl } from '@/lib/site-config';
 import { journalEntries, products } from '@/lib/site-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ['', '/boutique', '/atelier', '/journal'];
+  const staticRoutes = ['', '/boutique', '/atelier', '/journal', '/livraison', '/carte-cadeau', '/mentions-legales', '/cgv'];
   const productRoutes = products.map((product) => `/boutique/${product.slug}`);
   const journalRoutes = journalEntries.map((entry) => `/journal/${entry.slug}`);
 
